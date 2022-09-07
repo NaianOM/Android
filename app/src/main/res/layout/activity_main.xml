@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#79BDDC"
+    android:backgroundTint="#79BDDC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador 1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jugador1"
+        app:layout_constraintLeft_toLeftOf="@+id/jugador1" />
+
+    <TextView
+        android:id="@+id/jugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador 2"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+         />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/jugador2"
+        app:layout_constraintRight_toRightOf="@+id/jugador2"
+        android:layout_marginRight="35dp"/>
+
+    <TextView
+        android:id="@+id/estatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/contador1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+  />
+
+    <Button
+        android:id="@+id/boton0"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        app:layout_constraintTop_toBottomOf="@+id/contador1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        app:layout_constraintTop_toTopOf="@+id/boton0"
+        app:layout_constraintLeft_toRightOf="@+id/boton0"
+        />
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        app:layout_constraintTop_toTopOf="@+id/boton1"
+        app:layout_constraintLeft_toRightOf="@+id/boton1"
+        />
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        app:layout_constraintTop_toBottomOf="@+id/boton0"
+        app:layout_constraintLeft_toLeftOf="@+id/boton0"
+        />
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        app:layout_constraintTop_toTopOf="@+id/boton3"
+        app:layout_constraintLeft_toRightOf="@+id/boton3"
+        />
+
+    <Button
+        android:id="@+id/boton5"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/boton4"
+        app:layout_constraintTop_toTopOf="@+id/boton4" />
+    <Button
+        android:id="@+id/boton6"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/boton3"
+        app:layout_constraintTop_toBottomOf="@+id/boton3" />
+    <Button
+        android:id="@+id/boton7"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/boton6"
+        app:layout_constraintTop_toTopOf="@+id/boton6" />
+    <Button
+        android:id="@+id/boton8"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:backgroundTint="#D36AE8"
+        android:textColor="#FCFCFC"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/boton7"
+        app:layout_constraintTop_toTopOf="@+id/boton7" />
+    
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Volver a jugar"
+        android:textColor="#FCFCFC"
+        android:backgroundTint="#273DC8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/boton6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
